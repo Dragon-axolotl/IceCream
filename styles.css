@@ -4,7 +4,7 @@ body {
   margin: 0;
 }
 
-/* section styles */
+/* ============= LOCATION ============= */
 .locations,
 .passion {
   background: #fff5f6;
@@ -17,6 +17,7 @@ body {
 
 .locations__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
   list-style: none;
@@ -104,7 +105,6 @@ body {
 }
 
 /* BUTTONS */
-
 .locations__buttons {
   padding-top: 86px;
   display: flex;
@@ -140,8 +140,7 @@ body {
   background: #ecebeb;
   box-shadow: #7f757b 0px 0px 8px 2px;
 }
-/* PASSION SECTION */
-
+/* ============= PASSION ============= */
 .passion {
   padding: 80px 40px;
 }
@@ -228,4 +227,49 @@ body {
   padding-top: 20px;
   border-top: 1px solid #f0dede;
   text-align: center;
+}
+
+/* ========== MEDIA ========== */
+
+@media (max-width: 768px) {
+  .locations__list {
+    gap: 20px;
+  }
+
+  .locations__card {
+    width: calc((100% - 40px) / 3);
+    padding: 20px;
+  }
+
+  .locations__buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .locations {
+    padding: 60px 20px;
+  }
+
+  .locations__list {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .locations__card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .passion__top {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .passion__right {
+    align-items: flex-start;
+  }
 }
