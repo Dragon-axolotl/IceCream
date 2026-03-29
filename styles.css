@@ -26,7 +26,7 @@
   /* Product colors */
   --color-cafe: #f0d1a5;
   --color-food-truck: #c2e297;
-}
+}          
 
 body {
   font-family: "DM Sans", sans-serif;
@@ -47,7 +47,7 @@ body {
 
 .locations,
 .passion {
-  background: var(--color-gray);
+  background: var(--color-gray) 100% 0% no-repeat;
 }
 
 .locations {
